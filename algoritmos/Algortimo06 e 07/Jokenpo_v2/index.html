@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Jogo do Jokenpô</title>
+    <script src="js/jokenpo.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div class="row mx-auto mt-1 bg-light text-center p-5">
+            <div class="col-4">
+                <h2>Jogador 1</h2>
+                <h3 id="mao-player-1">Nada Ainda!</h3>
+            </div>
+            <div class="col-4">
+                <h2>Versus</h2>
+                <h3 id="resultado">Nada Ainda!</h3>
+            </div>
+            <div class="col-4">
+                <h2>Jogador 2</h2>
+                <h3 id="mao-player-2">Nada Ainda!</h3>
+            </div>
+        </div>
+        
+        <a href="#" class="btn btn-primary btn-lg mt-2" aling="center" onclick="jokenpo.verificarVencedor();">Play</a>
+    </main>
+</body>
+</html>

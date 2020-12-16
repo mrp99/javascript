@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <main class="container text-center">
+        <section class="row bg-light p-3 m-3">
+            <div class="col-12">
+                <h1 id="total"></h1>
+            </div>
+        </section>
+        <section class="row p-3 m-3">
+            <div class="col-6">
+                <h2>Total de Entrada</h2>
+                <span id="totalRenda"></span>
+            </div>
+            <div class="col-6">
+                <h2>Total de Saída</h2>
+                <span id="totalDespesa"></span>
+                <span id="porDespesa"></span>
+            </div>
+        </section>
+        <section class="row">
+            <div class="d-flex flex-row justify-content-between w-100">
+                <select id="tipoMovimento" class="form-control m-2" style="width:100px;">
+                    <option value="renda">+</option>
+                    <option value="despesa">-</option>
+                </select>
+                <input type="text" id="descricao" placeholder="Descrição da Movimentação" class="form-control m-2">
+                <input type="text" id="valor" placeholder="Digite o valor" class="form-control m-2" style="width:150px;">
+                <button id="btnSave" class="btn btn-primary m-2">Salvar</button>
+            </div>
+        </section>
+        <section class="row p-3 m-3" id="tableSection">
+            <div class="col-md-6 col-12">
+                <h2>Tabela de Entrada</h2>
+                <table class="table" id="tabelaRenda">
+                </table>
+            </div>
+            <div class="col-md-6 col-12">
+                <h2>Tabela de Saída</h2>
+                <table class="table" id="tabelaDespesa">
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

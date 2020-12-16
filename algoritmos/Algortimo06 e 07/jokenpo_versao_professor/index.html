@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="script-11-09.js"></script>
+    <style>
+        body {
+            background-image: url('https://lh3.googleusercontent.com/proxy/dwOMufdE6uzgsaDIwrkvNvNwoaTV8zCQ9aDDQhiXJ8AuWM4ZHGp6QiAmME2iMU4NjDVf3_wixmM5Z-8XJAubt7gD1UT1UdwxDHfsXC8VK7ytgc8nxxcb3RIdeKAhw2fMfFGSUa2BKDVa2mHXqwj2ASMIQQ');
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container my-auto">
+        <h1 class="m-5 text-center text-white">Jogo do Porco</h1>
+        <div id="mensagem" class="h6 mt-5 text-white text-center">É a vez do Jogador 1</div>
+        <div class="row mx-auto mt-1 shadow-lg">
+            <div class="col-6 text-center bg-light p-5">
+                <div class="mt-3">
+                    <span class="h1 d-block">Jogador 1</span>
+                    <span id="jogador-1-jogando" class="badge badge-danger">Sua Vez</span>
+                    <span id="jogador-1-esperando" class="badge badge-secondary d-none">Aguarde</span>
+                </div>
+                <div class="mt-5">
+                    <span class="h2" id="jogador-1-pontos">0</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column mt-5">
+                    <span style="width: 150px;" class="h5 pt-4 bg-danger text-white d-block m-0" id="">Atual</span>
+                    <span style="width: 150px;" class="h2 pb-4 bg-danger text-white d-block m-0"
+                        id="jogador-1-pontosAtuais">0</span>
+                </div>
+            </div>
+            <div class="col-6 text-center bg-white p-5">
+                <div class="mt-3">
+                    <span class="h1 d-block">Jogador 2</span>
+                    <span id="jogador-2-jogando" class="badge badge-danger d-none">Sua Vez</span>
+                    <span id="jogador-2-esperando" class="badge badge-secondary">Aguarde</span>
+                </div>
+                <div class="mt-5">
+                    <span class="h2" id="jogador-2-pontos">0</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column mt-5">
+                    <span style="width: 150px;" class="h5 pt-4 bg-danger text-white d-block m-0" id="">Atual</span>
+                    <span style="width: 150px;" class="h2 pb-4 bg-danger text-white d-block m-0"
+                        id="jogador-2-pontosAtuais">0</span>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; top: 230px; right: calc(50% - 55px);">
+            <span id="dado" style="width: 110px;" class="d-block p-4 bg-dark text-white h2 text-center"
+                href="#">1</span>
+        </div>
+        <div style="position: absolute; top: 350px; right: calc(50% - 85px)">
+            <a class="btn btn-primary btn-lg" href="#" onclick="pig.jogadorAtualJogaODado();">Rodar os
+                dados</a>
+        </div>
+        <div style="position: absolute; top: 420px; right: calc(50% - 35px)">
+            <a class="btn btn-danger btn-lg" href="#" onclick="pig.jogadorAtualParaJogada();">Parar</a>
+        </div>
+    </main>
+
+
+
+    <!--
+    <h1>Jogo do Porco</h1>
+    <p id="dado">1</p>
+    <a href="#" onclick="pig.retornaJogadorAtual().jogaODado();">Roda os dados</a>
+
+    <h2 id="mensagem"></h2>
+
+    <h3 id="jogador-1">0 Pontos</h3>
+    <h3 id="jogador-2">0 Pontos</h3>
+    -->
+</body>
+
+</html>

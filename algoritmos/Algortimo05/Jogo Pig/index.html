@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo do Porco</title>
+
+    <script src="pig.js"></script>
+</head>
+<body>
+    <h1>Jogo do Porco</h1>
+    <div>
+        Dado: <span id="dado">1</span>
+    </div>
+    <div>
+        Jogador: <span id="jogador-atual">player 1</span>
+    </div>
+    <div>
+        Jogador 1: pontos temporarios = <span id="jogador-1-pontosTemporarios">0</span> 
+        e pontos oficiais = <span id="jogador-1-pontos">0</span><br>
+        Jogador 2: pontos temporarios = <span id="jogador-2-pontosTemporarios">0</span>  
+        e pontos oficiais = <span id="jogador-2-pontos">0</span>
+    </div>
+    <a href="#" onclick="pig.playerAtual().jogarODado();">Roda os dados</a><br> 
+    <a href="#" onclick="pig.playerAtual().parar();">Parar</a>
+</body>
+</html>

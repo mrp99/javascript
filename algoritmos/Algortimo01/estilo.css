@@ -1,0 +1,39 @@
+p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+input {
+    display: flex;
+    background: #34af23;
+    color: #FFF;
+    margin-bottom: 1.2rem;
+    width: 10%;
+}
+input:hover {
+    background: darkgreen;
+}
+
+
+#btn {
+    font-size: 2rem;
+    background: #34af23;
+    color: #FFF;
+    border: 1px solid #000;
+    border-radius: 0.8rem;
+    margin-top: 0.8rem;
+}
+#btn:hover {
+    background: darkgreen;
+}
+
+
+body {
+    background: #f1f1f1;
+}
